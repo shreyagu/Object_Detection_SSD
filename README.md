@@ -38,7 +38,7 @@ wget https://s3.amazonaws.com/amdegroot-models/ssd300_mAP_77.43_v2.pth
 ## Sample Results
 
 1. Object detection sample on an image
-![alt text](https://raw.githubusercontent.com/shreyagu/ObjectDetection/master/sample_results/output.jpeg)
+![alt text](https://raw.githubusercontent.com/shreyagu/Object_Detection_SSD/master/sample_results/output.jpeg)
 
 ## Built With
 [Jupyter-notebook](http://jupyter.org/) - A web-based notebook environment for interactive computing.
