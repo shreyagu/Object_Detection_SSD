@@ -1,6 +1,7 @@
 # Object Detection
 
-We present you the object detection code which can be applied to any pre-recorded video or can use the live camera. 
+We present you the object detection code which can be applied to any pre-recorded video. The method relies on a single deep neural network to generate scores to detect the presence of each object and produce a bounding box for visual identification of the object. The bounding box is scaled according to the size of the object as it moves near or farther away from the camera. 
+
 
 ## Team Info:
 ### Shreya Gupta
@@ -19,6 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Prerequisites
 The following python packages are required for running the software.
 
+
 [numpy](http://www.numpy.org/)
 
 [OpenCV 3.4.1](https://github.com/opencv/opencv)
@@ -26,10 +28,17 @@ The following python packages are required for running the software.
 [PyTorch](https://pytorch.org/docs/stable/index.html)
 
 
+### Training
+Run below commands to store the trained weights
+```
+cd weights
+wget https://s3.amazonaws.com/amdegroot-models/ssd300_mAP_77.43_v2.pth
+```
+
 ## Sample Results
 
 1. Object detection sample on an image
-![alt text](https://raw.githubusercontent.com/shreyagu/ObjectDetection/master/sample_results/output.png)
+![alt text](https://raw.githubusercontent.com/shreyagu/ObjectDetection/master/sample_results/output.jpeg)
 
 ## Built With
 [Jupyter-notebook](http://jupyter.org/) - A web-based notebook environment for interactive computing.
@@ -37,6 +46,8 @@ The following python packages are required for running the software.
 [Anaconda Python Cloud](https://anaconda.org/anaconda/python) - A free and open source distribution of the Python and R programming languages for data science and machine learning related applications.
 
 ## References
+The COCO dataset can be downloaded [here](http://cocodataset.org/#download).
+
 
 The single shot detector implementation:
 [OpenCV Source](https://github.com/amdegroot/ssd.pytorch)
